@@ -1,5 +1,8 @@
 package org.example.composite;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Company {
     public static void main(String[] args){
         
@@ -22,5 +25,9 @@ public class Company {
         directory.addEmployee(accDircetory);
 
         directory.shoEmployeeDetails();
+
+        List<Integer> availableBooths= new ArrayList<>(5); 
+        System.out.println(availableBooths);
+        
     }
 }

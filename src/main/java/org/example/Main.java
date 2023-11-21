@@ -9,6 +9,7 @@ import org.example.builder.two.Person;
 import org.example.chainOfResponsibilityPattern.AbstractLogger;
 import org.example.composite.Developer;
 import org.example.composite.Employee;
+import org.example.composite.Manager;
 import org.example.factory.Design.factoryInterface.OS;
 import org.example.factory.Design.OperatingSystemFactory;
 import org.example.strategy.design.Add;
@@ -128,9 +129,13 @@ public class Main {
         System.out.println(names.stream().filter(n->n.equals("mim")).findFirst().get());
 
     
+        Manager m=new Manager();
         
-        
-        
+        System.out.println(m.getAge());
+        if(m.getCompany()==null){
+            m.setCompany(new Developer());
+        }
+        m.getCompany().getAge();
         
         
         
