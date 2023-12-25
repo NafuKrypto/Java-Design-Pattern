@@ -136,9 +136,9 @@ public class Main {
             m.setCompany(new Developer());
         }
         m.getCompany().getAge();
-        
-        
-        
+
+
+         
         
         
         
