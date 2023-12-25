@@ -1,24 +1,20 @@
 package org.example;
 
-import java.util.HashSet;
-import java.util.Set;
-import org.example.builder.one.Meal;
-import org.example.builder.one.MealBuilder;
+import org.example.creationalDesignPattern.builder.one.Meal;
+import org.example.creationalDesignPattern.builder.one.MealBuilder;
 
-import org.example.builder.two.Person;
-import org.example.chainOfResponsibilityPattern.AbstractLogger;
-import org.example.composite.Developer;
-import org.example.composite.Employee;
-import org.example.composite.Manager;
-import org.example.factory.Design.factoryInterface.OS;
-import org.example.factory.Design.OperatingSystemFactory;
-import org.example.strategy.design.Add;
-import org.example.strategy.design.ContextStrategy;
-import org.example.strategy.design.Mul;
-import org.example.strategy.design.Sub;
-import org.example.template.design.Cricket;
-import org.example.template.design.Football;
-import org.example.template.design.templateAbstract.Game;
+import org.example.creationalDesignPattern.builder.two.Person;
+import org.example.behavioralDesignPattern.chainOfResponsibilityPattern.AbstractLogger;
+import org.example.structuralDesignPattern.composite.Developer;
+import org.example.structuralDesignPattern.composite.Manager;
+import org.example.creationalDesignPattern.factory.design.factoryInterface.OS;
+import org.example.creationalDesignPattern.factory.design.OperatingSystemFactory;
+import org.example.behavioralDesignPattern.strategyDesign.Add;
+import org.example.behavioralDesignPattern.strategyDesign.ContextStrategy;
+import org.example.behavioralDesignPattern.strategyDesign.Mul;
+import org.example.behavioralDesignPattern.strategyDesign.Sub;
+import org.example.behavioralDesignPattern.templateDesign.Football;
+import org.example.behavioralDesignPattern.templateDesign.templateAbstract.Game;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,7 +22,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static org.example.chainOfResponsibilityPattern.ChainPatternDemo.getChainOfLoggers;
+import static org.example.behavioralDesignPattern.chainOfResponsibilityPattern.ChainPatternDemo.getChainOfLoggers;
 
 public class Main {
     public static <T> void main(String[] args) {
